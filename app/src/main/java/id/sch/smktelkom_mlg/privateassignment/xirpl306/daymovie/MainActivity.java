@@ -23,15 +23,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -40,6 +31,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        changePage(R.id.nav_camera);
+        navigationView.setCheckedItem(R.id.nav_camera);
     }
 
     @Override
@@ -78,24 +72,36 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
         int id = item.getItemId();
+        changePage(id);
+        return true;
+
+    }
+
+    private void changePage(int id) {
+        Fragment fragment = null;
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            fragment = new PopularFragment();
+            setTitle("Popular");
         } else if (id == R.id.nav_gallery) {
+            fragment = new RatedFragment();
+            setTitle("Top Rated");
 
         } else if (id == R.id.nav_slideshow) {
+            fragment = new UpcominFragment();
+            setTitle("Upcoming");
 
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+            fragment = new PlayingFragment();
+            setTitle("Now Playing");
 
         }
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, fragment).commitNow();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
