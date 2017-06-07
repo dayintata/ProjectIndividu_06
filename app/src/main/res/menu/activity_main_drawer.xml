@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Popular" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_stars_black_24dp"
+            android:title="Top Rated" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Upcoming" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_airplay_black_24dp"
+            android:title="Now Playing" />
+    </group>
+
+</menu>
