@@ -16,6 +16,9 @@ The Movie DB (https://www.themoviedb.org/documentation/api)
 ## Jenis Navigasi yang digunakan pada Aplikasi
 Navigasi Drawer (Navigasi 4)
 
+## Database
+SQLite Dasar
+
 ## Deskripsi Aplikasi
 Aplikasi yang akan menampilkan berbagai macam MovieShow. Mulai dari Movie Show yang sedang populer saat ini sampai pada Movie Show yang sekarang sedang tayang. Side bar di samping kanan, akan menampilkan pilihan tampilan Movie Show.
 Pilihan Movie Show yang ditampilkan adalah Movie Show Popular, Movie Show Top Rated, Movie Show Upcoming, dan Movie Show Now Playing.
