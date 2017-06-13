@@ -30,3 +30,5 @@ Pilihan Movie Show yang ditampilkan adalah Movie Show Popular, Movie Show Top Ra
 ![aye3](https://user-images.githubusercontent.com/22117431/26923339-050cc370-4c6c-11e7-9950-581e26683309.jpeg)
 ![aye4](https://user-images.githubusercontent.com/22117431/26923344-060328c8-4c6c-11e7-91ab-53e42cd824d4.jpeg)
 ![aye5](https://user-images.githubusercontent.com/22117431/26923345-0753cc1e-4c6c-11e7-961d-765e818591cd.jpeg)
+![whatsapp image 2017-06-13 at 10 57 15](https://user-images.githubusercontent.com/22117431/27065484-b17a6482-5027-11e7-8803-d53d0c3a3d7e.jpeg)
+
